@@ -1,0 +1,79 @@
+{
+  "expo": {
+    "name": "Kestrel Vault",
+    "slug": "kestrel-vault",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "scheme": "kestrelvault",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B0B0F"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kestrelvault.app",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "Kestrel Vault uses Face ID to securely unlock your encrypted card and document vault.",
+        "NSCameraUsageDescription": "Kestrel Vault uses the camera to scan and store images of your cards, IDs, and tickets.",
+        "NSPhotoLibraryUsageDescription": "Kestrel Vault needs access to your photo library to import card and ticket images."
+      }
+    },
+    "android": {
+      "package": "com.kestrelvault.app",
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0B0B0F"
+      },
+      "permissions": [
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT",
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-sqlite",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Kestrel Vault to access your camera to scan cards, IDs, and tickets."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Kestrel Vault to access your photos to import card images."
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Allow Kestrel Vault to use Face ID to unlock your vault."
+        }
+      ],
+      "react-native-quick-crypto",
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.REPLACE_WITH_YOUR_IOS_OAUTH_CLIENT_ID"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "1bdf939f-8c19-4809-bff8-82eb807912be"
+      }
+    },
+    "owner": "codex-v5"
+  }
+}

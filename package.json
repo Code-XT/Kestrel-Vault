@@ -1,0 +1,61 @@
+{
+  "name": "kestrel-vault",
+  "private": true,
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "lint": "eslint . --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit",
+    "test": "jest",
+    "prebuild": "expo prebuild"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "*",
+    "@react-native-google-signin/google-signin": "*",
+    "@react-native-ml-kit/text-recognition": "*",
+    "@react-navigation/native": "*",
+    "@react-navigation/native-stack": "*",
+    "buffer": "*",
+    "expo": "*",
+    "expo-blur": "*",
+    "expo-build-properties": "^57.0.8",
+    "expo-camera": "*",
+    "expo-clipboard": "*",
+    "expo-crypto": "*",
+    "expo-file-system": "*",
+    "expo-haptics": "*",
+    "expo-image-manipulator": "*",
+    "expo-image-picker": "*",
+    "expo-linear-gradient": "*",
+    "expo-local-authentication": "*",
+    "expo-secure-store": "*",
+    "expo-sqlite": "*",
+    "expo-status-bar": "*",
+    "expo-system-ui": "^57.0.2",
+    "react": "*",
+    "react-native": "*",
+    "react-native-barcode-svg": "*",
+    "react-native-gesture-handler": "*",
+    "react-native-qrcode-svg": "*",
+    "react-native-quick-crypto": "*",
+    "react-native-reanimated": "*",
+    "react-native-safe-area-context": "*",
+    "react-native-screens": "*",
+    "react-native-svg": "*",
+    "zustand": "*"
+  },
+  "devDependencies": {
+    "@babel/core": "*",
+    "@types/react": "*",
+    "eslint": "*",
+    "eslint-config-universe": "*",
+    "jest": "*",
+    "jest-expo": "*",
+    "typescript": "*"
+  },
+  "eslintConfig": {
+    "extends": "universe/native"
+  }
+}

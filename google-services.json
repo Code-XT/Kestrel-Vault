@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "79907795990",
+    "project_id": "kestrel-vault",
+    "storage_bucket": "kestrel-vault.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79907795990:android:b40735bceb9fc123ab3137",
+        "android_client_info": {
+          "package_name": "com.kestrelvault.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79907795990-u4bsq4ci2chlnfd26m4se0eusoedf94d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kestrelvault.app",
+            "certificate_hash": "02c6ab0c58a324d9ccf88c1de19bc9fd40d5e418"
+          }
+        },
+        {
+          "client_id": "79907795990-bvslm7gvfj9q62euiulj72r1c2iqgds2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAwmQ2qIgjsbux3Ybjx2qDbV_kmLpsM9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79907795990-bvslm7gvfj9q62euiulj72r1c2iqgds2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
